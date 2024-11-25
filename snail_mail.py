@@ -44,6 +44,9 @@ while not is_valid:
     if "@" not in email:
         print(error_message_no_at)
 
+    elif email.endswith("@"):
+        print(error_message_no_domain)
+
     elif email.count("@") > 1:
         print(error_message_too_many_at)
 
